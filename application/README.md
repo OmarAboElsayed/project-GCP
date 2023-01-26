@@ -4,6 +4,19 @@ This application will be used as a demo for DevOps Challenges.
 
 You should fork/clone this repository to use as a basis for the challenge.
 
+# build app about Dockerfile && push in gcr.io
+```
+docker build -t name-image .
+docker tag name-image gcr.io/project-name/name-image
+docker push gcr.io/project-name/name-image
+```
+# pull redis && push in gcr.io
+```
+docker pull redis
+docker tag redis gcr.io/project-name/redis
+docker push gcr.io/project-name/redis
+```
+
 ## Demo application
 
 ### Requirements
@@ -15,15 +28,11 @@ You should fork/clone this repository to use as a basis for the challenge.
 - `pip` >= 9.0
 - `redis` >= 5.0
 
-`>=` means any version of the package, above or equal to the specified version.
 
-#### Application
 
-- `redis-py`
-- `tornado`
 
-You can find them in the `requirements.txt` file and their required version number.
-You can install them by using:
+
+You
 
 ```bash
 pip install -r requirements.txt
