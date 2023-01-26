@@ -41,11 +41,6 @@ You can find them all and their default values in the `.env` file. They need to 
 - `REDIS_PORT` is the port on which to communicate with redis. Normally it is `6379`.
 - `REDIS_DB` which redis db should be used. Normally it is `0`.
 
-Application can be found in `hello.py` file. You can start the application by using:
-
-```bash
-export $(cat .env | xargs) && python hello.py
-```
 
 Although you don't have to export the environment variables that way. :wink:
 
@@ -63,10 +58,5 @@ You can run the tests by using:
 python tests/test.py
 ```
 
-## License
 
-Copyright (c) 2019 by the Tradebyte Software GmbH.<br/>
-`DevOps-Challenge` is free software, and may be redistributed under the terms specified in the [LICENSE] file.
-
-[license]: /LICENSE
 
