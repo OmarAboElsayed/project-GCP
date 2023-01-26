@@ -10,15 +10,15 @@ resource "google_project_iam_binding" "node-service-account-iam" {
   ]
 }
 
-resource "google_service_account" "k8s-sa" {
-  account_id   = "k8s-sa"
-  display_name = "k8s-sa"
+resource "google_service_account" "k8s-service" {
+  account_id   = "k8s-service"
+  display_name = "k8s-service"
 }
 
-resource "google_project_iam_binding" "k8s-sa-binding" {
+resource "google_project_iam_binding" "k8s-service-binding" {
   project = omar-mohamed-el-sayed-project
   role    = "roles/storage.admin" # Full access to storage
   members = [
-    "serviceAccount:${google_service_account.k8s-sa.email}"
+    "serviceAccount:${google_service_account.k8s-service.email}"
   ]
 }
