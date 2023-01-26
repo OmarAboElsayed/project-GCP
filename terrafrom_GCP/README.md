@@ -3,6 +3,7 @@
 1 VPC
 2 subnets (management subnet & restricted subnet):
 1. Management subnet has the following:
+
 • NAT gateway
 • Private VM
 2. Restricted subnet has the following:
