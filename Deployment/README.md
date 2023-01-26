@@ -28,7 +28,12 @@ gcloud auth login
 gcloud auth activate-service-account --project=omar-mohamed-el-sayed-project --key-file=file.json
 
 ```
-## coonect cluster
+## connect cluster
 ```
 gcloud container clusters get-credentials app-cluster --zone us-central1-a    --project omar-mohamed-el-sayed-project
+```
+## RUB FILE YANL IN KUBENETES 
+```
+kubectl apply -f redis.yaml
+
 ```
