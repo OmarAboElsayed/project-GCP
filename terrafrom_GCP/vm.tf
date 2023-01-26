@@ -1,6 +1,6 @@
 resource "google_compute_instance" "vm" {
   name         = "vm"
-  machine_type = "e2-micro"
+  machine_type = "e2-small"
   zone         = "us-central1-a"
   
    metadata_startup_script = <<SCRIPT
