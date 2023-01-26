@@ -22,3 +22,9 @@ sudo apt-get update && sudo apt-get install -y google-cloud-cli
 gcloud version
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 ```
+## activate account
+```
+gcloud auth login
+gcloud auth activate-service-account --project=omar-mohamed-el-sayed-project --key-file=file.json
+
+```
