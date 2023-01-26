@@ -35,5 +35,7 @@ gcloud container clusters get-credentials app-cluster --zone us-central1-a    --
 ## RUB FILE YANL IN KUBENETES 
 ```
 kubectl apply -f redis.yaml
+kubectl apply -f conf.yaml
+kubectl apply -f app.yaml
 
 ```
