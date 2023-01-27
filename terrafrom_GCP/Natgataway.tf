@@ -21,3 +21,4 @@ resource "google_compute_address" "nat" {
   network_tier = "PREMIUM"
 
   depends_on = [google_project_service.compute]
+}
