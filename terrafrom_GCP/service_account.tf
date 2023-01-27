@@ -16,7 +16,7 @@ resource "google_service_account" "k8s-service" {
 }
 
 resource "google_project_iam_binding" "k8s-service-binding" {
-  project = omar-mohamed-el-sayed-project
+  project = "omar-mohamed-el-sayed-project"
   role    = "roles/storage.admin" # Full access to storage
   members = [
     "serviceAccount:${google_service_account.k8s-service.email}"
